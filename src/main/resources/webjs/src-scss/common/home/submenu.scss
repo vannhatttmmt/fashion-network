@@ -1,0 +1,47 @@
+@import "common";
+
+.sub-menu {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #262626;
+  height: 50px;
+  .container {
+    .row {
+      .col-md-8 {
+        padding-top: 15px;
+        p{
+          color: #bbbbbb;
+          margin: 0;
+          a{color: #bbbbbb;}
+        }
+      }
+      .col-md-4 {
+        padding-top: 15px;
+        .right-corner {
+          .social-icon {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            li{
+              display: inline-block;
+              padding-left: 15px;
+              a{
+                color: #bbbbbb;
+                &:hover{
+                  color: #FFFFFF;
+                }
+              }
+            }
+          }
+          .login-and-register {
+            a{
+              color: #bbbbbb;
+              &:hover{
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

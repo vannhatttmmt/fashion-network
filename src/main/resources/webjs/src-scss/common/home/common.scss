@@ -1,0 +1,9 @@
+.clearfix{
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+@mixin background($color){
+  background-color: $color;
+}
