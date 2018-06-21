@@ -1,17 +1,17 @@
 @import "common";
 
 .sub-menu {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-bottom: 1px solid #262626;
+  background-color: #f74d18;
+  border-bottom: 1px solid #f74d18;
   height: 50px;
   .container {
     .row {
       .col-md-8 {
         padding-top: 15px;
         p{
-          color: #bbbbbb;
+          color: #ffffff;
           margin: 0;
-          a{color: #bbbbbb;}
+          a{color: #ffffff;}
         }
       }
       .col-md-4 {
@@ -25,7 +25,7 @@
               display: inline-block;
               padding-left: 15px;
               a{
-                color: #bbbbbb;
+                color: #ffffff;
                 &:hover{
                   color: #FFFFFF;
                 }
@@ -34,7 +34,7 @@
           }
           .login-and-register {
             a{
-              color: #bbbbbb;
+              color: #ffffff;
               &:hover{
                 color: #FFFFFF;
               }
