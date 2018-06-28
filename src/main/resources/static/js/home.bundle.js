@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "6ab1d3b1426a854d6ef5"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "3af3fe49c3a94b84fe18"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1127,13 +1127,13 @@ var SubMenu = function (_React$Component) {
                                     { className: "login-and-register col-md-7" },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         "a",
-                                        { className: "", href: "/account/register" },
+                                        { className: "", href: "/registration?" },
                                         "\u0110\u0103ng k\xFD /"
                                     ),
                                     " \xA0",
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         "a",
-                                        { className: "", href: "/account/login" },
+                                        { className: "", href: "/login?" },
                                         "\u0110\u0103ng nh\u1EADp"
                                     )
                                 )

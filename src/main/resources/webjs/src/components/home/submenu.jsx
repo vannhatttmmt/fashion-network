@@ -26,8 +26,8 @@ class SubMenu extends React.Component{
                                 </ul>
                                 <div className="login-and-register col-md-7">
 
-                                    <a className="" href="/account/register">Đăng ký /</a> &nbsp;
-                                    <a className="" href="/account/login">Đăng nhập</a>
+                                    <a className="" href="/registration?">Đăng ký /</a> &nbsp;
+                                    <a className="" href="/login?">Đăng nhập</a>
 
                                 </div>
                             </div>
