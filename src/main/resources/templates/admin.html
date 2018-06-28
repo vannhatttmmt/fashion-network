@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Admin</title>
+    <link rel="stylesheet" th:href="@{/vendor/fontawesome/fontawesome.css}">
+    <link rel="stylesheet" th:href="@{/vendor/nprogress/nprogress.css}">
+    <link rel="stylesheet" th:href="@{/vendor/sweetalert/sweetalert.css}">
+    <link rel="stylesheet" th:href="@{/vendor/datetimepicker/datetimepicker.min.css}">
+    <!--<link rel="stylesheet" th:href="@{/vendor/bootstrap/css/bootstrap.min.css}">-->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/admin.css">
@@ -26,11 +31,7 @@
             <!-- Logo -->
             <div class="navbar-header">
                 <a class="navbar-brand" href="admin.html">
-                    <!-- Logo icon -->
                     <b><img src="img/logo.png" alt="homepage" class="dark-logo"/></b>
-                    <!--End Logo icon -->
-                    <!-- Logo text -->
-                    <span><img src="img/logo-text.png" alt="homepage" class="dark-logo"/></span>
                 </a>
             </div>
             <!-- End Logo -->
@@ -72,14 +73,6 @@
                                     <ul class="list-style-none">
                                         <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
                                             Is Another Link</a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
-                                            Is Another Link</a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
-                                            Is Another Link</a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
-                                            Is Another Link</a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
-                                            Is Another Link</a></li>
                                     </ul>
                                 </li>
                                 <li class="col-lg-3 col-xlg-3 m-b-30">
@@ -88,28 +81,12 @@
                                     <ul class="list-style-none">
                                         <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
                                             Is Another Link</a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
-                                            Is Another Link</a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
-                                            Is Another Link</a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
-                                            Is Another Link</a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
-                                            Is Another Link</a></li>
                                     </ul>
                                 </li>
                                 <li class="col-lg-3 col-xlg-3 m-b-30">
                                     <h4 class="m-b-20">List style</h4>
                                     <!-- List style -->
                                     <ul class="list-style-none">
-                                        <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
-                                            Is Another Link</a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
-                                            Is Another Link</a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
-                                            Is Another Link</a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
-                                            Is Another Link</a></li>
                                         <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This
                                             Is Another Link</a></li>
                                     </ul>
@@ -291,9 +268,9 @@
 
                     <li class="nav-label">Route</li>
                     <li><a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-envelope"></i><span
-                            class="hide-menu">Danh sách trang</span></a>
+                            class="hide-menu">Các tuỳ chọn</span></a>
                         <ul aria-expanded="false" class="collapse">
-                            <li><a href="index.html">Về trang chủ</a></li>
+                            <li><a href="/">Về trang chủ</a></li>
                             <button class="btn btn-primary" id="myBtnn">Insert new product</button>
                         </ul>
                     </li>
@@ -311,10 +288,6 @@
             <div class="col-md-5 align-self-center">
                 <h3 class="text-primary">Dashboard</h3></div>
             <div class="col-md-7 align-self-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                    <li class="breadcrumb-item active">Dashboard</li>
-                </ol>
             </div>
         </div>
         <!-- End Bread crumb -->
@@ -534,43 +507,48 @@
 <div id="myModall" class="modall">
     <div class="modall-content">
         <div class="modal-body">
-            <div class="img-select-block margin-bottom-15">
-                <label>Product image</label><br/>
-                <img id="preview-product-img" th:src="@{/img/default-img.jpg}"/>
+            <div class="img-select-block">
+                <img id="preview-product-img" th:src="@{/img/default.jpg}"/>
                 <input type='file' id="input-select-img-product"/>
             </div>
-            <div class="form-group margin-bottom-15">
-                <label>Product name:</label>
-                <input type="text" class="form-control" id="input-product-name">
-            </div>
-            <div class="form-group margin-bottom-15">
-                <label for="input-product-category">Category:</label>
-                <select class="form-control" id="input-product-category">
-                    <option th:each="category : ${vm.getListCategories()}"
-                            th:value="${category.getId()}" th:text="${category.getName()}"></option>
-                </select>
-            </div>
-
-            <div class="form-group margin-bottom-15">
-                <label>Product price:</label>
-                <input type="text" class="form-control" id="input-product-price">
-            </div>
-
-            <div class="form-group margin-bottom-15">
-                <label>Product description:</label>
-                <textarea type="text" class="form-control" id="input-product-desc"></textarea>
-            </div>
-
-            <div class="form-group">
-                <label>Product created date:</label>
-                <div class='input-group date' id='datepicker-created-date-product'>
-                    <input type='text' class="form-control"/>
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
+            <div class="form-group row">
+                <label class="col-md-3 col-form-label">Product name:</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="input-product-name"/>
                 </div>
             </div>
-            <button class="btn btn-default btn-save-product">Save product</button>
+            <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="input-product-category">Category:</label>
+                <div class="col-md-9">
+                    <select class="form-control" id="input-product-category">
+                        <option th:each="category : ${vm.getListCategories()}"
+                                th:value="${category.getId()}" th:text="${category.getName()}"></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-3 col-form-label">Product price:</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="input-product-price">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-3 col-form-label">Product description:</label>
+                <div class="col-md-9">
+                    <textarea type="text" class="form-control" id="input-product-desc"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-3 col-form-label">Product created date:</label>
+                <div class="input-group date col-md-9" id="datepicker-created-date-product">
+                    <input type="text" class="form-control"/>
+                    <button class="input-group-addon btn btn-primary">Pick</button>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-save-product">Save product</button>
         </div>
         <div class="modal-footer">
             <button type="button" class="close" data-dismiss="modal">Close</button>
@@ -581,6 +559,14 @@
 <script src="js/lib/jquery/jquery.min.js"></script>
 <script src="js/lib/bootstrap/js/popper.min.js"></script>
 <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
+<!--<script th:src="@{/vendor/jquery/jquery.min.js}"></script>-->
+<!--<script th:src="@{/vendor/bootstrap/js/bootstrap.min.js}"></script>-->
+<script th:src="@{/vendor/axios/axios.js}"></script>
+<script th:src="@{/vendor/sweetalert/sweetalert.js}"></script>
+<script th:src="@{/vendor/moment/moment.min.js}"></script>
+<script th:src="@{/vendor/moment/vi.js}"></script>
+<script th:src="@{/vendor/datetimepicker/datetimepicker.min.js}"></script>
+<script th:src="@{/vendor/nprogress/nprogress.js}"></script>
 <script src="js/sidebarmenu.js"></script>
 <script src="js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
 <script src="js/lib/morris-chart/raphael-min.js"></script>

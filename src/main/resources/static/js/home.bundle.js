@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3af3fe49c3a94b84fe18"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a01a26479f94978701a1"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1127,13 +1127,13 @@ var SubMenu = function (_React$Component) {
                                     { className: "login-and-register col-md-7" },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         "a",
-                                        { className: "", href: "/registration?" },
+                                        { className: "", href: "/account/register" },
                                         "\u0110\u0103ng k\xFD /"
                                     ),
                                     " \xA0",
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         "a",
-                                        { className: "", href: "/login?" },
+                                        { className: "", href: "/account/login" },
                                         "\u0110\u0103ng nh\u1EADp"
                                     )
                                 )
@@ -1220,7 +1220,7 @@ var MainMenu = function (_React$Component) {
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "div",
                             { className: "col-md-2" },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "//theme.hstatic.net/1000234712/1000313024/14/logo.png?v=22", alt: "" })
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "home-logo", src: "img/logo-white.png", alt: "" })
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "div",
@@ -1246,77 +1246,251 @@ var MainMenu = function (_React$Component) {
                                         { className: "dropdown-content" },
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                             "div",
-                                            { className: "row" },
+                                            { className: "dropdown-top clearfix" },
                                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                                 "div",
-                                                { className: "column" },
+                                                { className: "col-md-4" },
                                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    "h3",
-                                                    null,
-                                                    "Category 1"
-                                                ),
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    "a",
-                                                    { href: "#" },
-                                                    "Link 1"
-                                                ),
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    "a",
-                                                    { href: "#" },
-                                                    "Link 2"
-                                                ),
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    "a",
-                                                    { href: "#" },
-                                                    "Link 3"
+                                                    "div",
+                                                    { className: "content-inner" },
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "h4",
+                                                        null,
+                                                        "M\xE0u s\u1EAFc phong ph\xFA"
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "p",
+                                                        null,
+                                                        "Kh\xF4ng gi\u1EDBi h\u1EA1n m\xE0u s\u1EAFc"
+                                                    )
                                                 )
                                             ),
                                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                                 "div",
-                                                { className: "column" },
+                                                { className: "col-md-4" },
                                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    "h3",
-                                                    null,
-                                                    "Category 2"
-                                                ),
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    "a",
-                                                    { href: "#" },
-                                                    "Link 1"
-                                                ),
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    "a",
-                                                    { href: "#" },
-                                                    "Link 2"
-                                                ),
-                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    "a",
-                                                    { href: "#" },
-                                                    "Link 3"
+                                                    "div",
+                                                    { className: "content-inner" },
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "h4",
+                                                        null,
+                                                        "M\u1EABu m\xE3 \u0111a d\u1EA1ng"
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "p",
+                                                        null,
+                                                        "T\u1EA5t c\u1EA3 c\xE1c m\xF3n th\u1EDDi trang"
+                                                    )
                                                 )
                                             ),
                                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                                 "div",
-                                                { className: "column" },
+                                                { className: "col-md-4" },
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    "div",
+                                                    { className: "content-inner" },
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "h4",
+                                                        null,
+                                                        "Gi\xE1 c\u1EA3 h\u1EE3p l\xFD"
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "p",
+                                                        null,
+                                                        "\u1EDE \u0111\xE2u b\xE1n r\u1EBB, ch\xFAng t\xF4i r\u1EBB h\u01A1n"
+                                                    )
+                                                )
+                                            )
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("hr", null),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            "div",
+                                            { className: "dropdown-mid clearfix" },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "div",
+                                                { className: "col-md-3" },
                                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                                     "h3",
                                                     null,
-                                                    "Category 3"
+                                                    "\u0110\u1ED2 NAM"
                                                 ),
                                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    "a",
-                                                    { href: "#" },
-                                                    "Link 1"
+                                                    "ul",
+                                                    null,
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "\xC1o Cotton"
+                                                        )
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "Ph\u1EE5 ki\u1EC7n nam"
+                                                        )
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "\xC1o kho\xE1c"
+                                                        )
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "Gi\xE0y nam"
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "div",
+                                                { className: "col-md-3" },
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    "h3",
+                                                    null,
+                                                    "\u0110\u1ED2 N\u1EEE"
                                                 ),
                                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    "a",
-                                                    { href: "#" },
-                                                    "Link 2"
+                                                    "ul",
+                                                    null,
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "Ch\xE2n v\xE1y"
+                                                        )
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "Qu\u1EA7n jean"
+                                                        )
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "\xC1o ph\xF4ng n\u1EEF"
+                                                        )
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "Gi\xE0y n\u1EEF"
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "div",
+                                                { className: "col-md-3" },
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    "h3",
+                                                    null,
+                                                    "PH\u1EE4 KI\u1EC6N"
                                                 ),
                                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                                    "a",
-                                                    { href: "#" },
-                                                    "Link 3"
+                                                    "ul",
+                                                    null,
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "Ph\u1EE5 ki\u1EC7n nam"
+                                                        )
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "Ph\u1EE5 ki\u1EC7n n\u1EEF"
+                                                        )
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "Ph\u1EE5 ki\u1EC7n c\xE1 t\xEDnh"
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "div",
+                                                { className: "col-md-3" },
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    "h3",
+                                                    null,
+                                                    "GI\u1EA2M GI\xC1"
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    "ul",
+                                                    null,
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "\u0110\u1ED3 nam"
+                                                        )
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "\xC1o len nam"
+                                                        )
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "\xC1o kho\xE1c"
+                                                        )
+                                                    ),
+                                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                        "li",
+                                                        null,
+                                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                            "a",
+                                                            { href: "" },
+                                                            "\xC1o cotton"
+                                                        )
+                                                    )
                                                 )
                                             )
                                         )
@@ -1345,7 +1519,7 @@ var MainMenu = function (_React$Component) {
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "div",
                                 { className: "col-md-8" },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", placeholder: "Search..." })
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", placeholder: "" })
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "div",

@@ -1,8 +1,8 @@
 @import "common";
 
 .main-menu{
-  background-color: rgba(0, 0, 0, 0.8);
-  border-bottom: 1px solid #262626;
+  background-color: #ff5722;
+  border-bottom: 1px solid #ff5722;
   height: 100px;
 
   .container{
@@ -10,10 +10,13 @@
     .row{
       .col-md-2{
         padding-left: 0;
+        .home-logo{
+          max-width: 165px;
+        }
       }
       .col-md-7{
         a{
-          color: #bbbbbb;
+          color: #ffffff;
           display: inline-block;
           padding-left: 30px;
           font-size: 18px;
@@ -22,7 +25,11 @@
           padding-top: 5px;
           .dropdown{
             display: inline-block;
+            .dropbtn{
+              padding-bottom: 35px;
+            }
             &:hover{
+              cursor: pointer;
               .dropdown-content{
                 display: block;
                 .row{
@@ -32,19 +39,49 @@
             }
           }
           .dropdown-content{
+            a{
+              color: #555555;
+              padding-left: 0;
+              font-size: 15px;
+            }
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
-            width: 600px;
-            left: 0;
+            background-color: #ffffff;
+            width: 800px;
+            left: -200px;
+            top: 45px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            .row{
-              .column{
-                a{
-                  color: #bbbbbb;
+            z-index: 1000;
+            .dropdown-top{
+              padding: 10px;
+              .col-md-4{
+                .content-inner{
+
                 }
               }
+            }
+            hr{
+              margin: 0 auto;
+              width: 80%;
+            }
+            .dropdown-mid{
+              padding: 10px;
+              .col-md-3{
+                ul{
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  h3{
+
+                  }
+                  li{
+                    padding: 5px 0;
+                  }
+                }
+              }
+            }
+            .dropdown-bot{
+
             }
           }
         }
@@ -62,7 +99,7 @@
           a{
             display: inline-block;
             padding-left: 50px;
-            color: #bbbbbb;
+            color: #ffffff;
             i{
               font-size: 30px;
             }
