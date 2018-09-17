@@ -1,0 +1,65 @@
+.clear-fix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.text-font {
+	color: #c41b1b;
+	font-weight: bold;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+
+.padding-top {
+	padding-top: 15px;
+}
+
+.padding-bottom {
+	padding-bottom: 10px;
+}
+
+.item__quantity .quantity-field {
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 1.25rem;
+    padding: 2px;
+    width: 6rem;
+}
+
+.item__action {
+	float: right;
+}
+
+.item__price::after,
+.item__subtotal::after,
+.item__subtotal-value::after,
+.item__total-value::after,
+.item__promo-value::after {
+    content: 'đ';
+}
+
+.cart__item {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #aaa;
+}
+
+.cart-summary {
+	margin-top: 15px;
+	padding: 15px;
+	border: 1px solid #aaa;
+	box-shadow: 2px 2px #fff;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/vendor/fontawesome/fontawesome.css}">
+    <link rel="stylesheet" th:href="@{/vendor/animate/animate.min.css}">
+    <link rel="stylesheet" th:href="@{/vendor/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/vendor/sweetalert/sweetalert.css}">
+    <link rel="stylesheet" th:href="@{/css/add2cart.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home.min.css}"/>
+</head>
+
+<body>
+<div id="content-cart">
+</div>
+<script th:inline="javascript">
+    /*<![CDATA[*/
+
+    var vm = /*[[${vm}]]*/ null;
+    console.log(vm);
+
+    /*]]>*/
+</script>
+
+<script th:src="@{/vendor/jquery/jquery.min.js}"></script>
+<script th:src="@{/vendor/bootstrap/js/bootstrap.min.js}"></script>
+<script th:src="@{/vendor/axios/axios.js}"></script>
+<script th:src="@{/vendor/nprogress/nprogress.js}"></script>
+<script th:src="@{/vendor/sweetalert/sweetalert.js}"></script>
+<script th:src="@{/js/index.js}"></script>
+<script type="text/javascript" th:src="@{/js/shoppingcartpage.bundle.js}"></script>
+
+</body>
+
+</html>
